@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Cart</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="content">
+  <header>
+    <h1>Your Cart</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main style="padding: 20px;">
+    <div id="cart-items">
+      <!-- Items will be injected by script.js -->
+    </div>
+
+    <div style="margin-top: 20px;">
+      <h3>Total: <span id="total">₹0</span></h3>
+      <button onclick="clearCart()">Clear Cart</button>
+    </div>
+
+    <div style="margin-top: 40px;">
+      <h2>Checkout Form</h2>
+      <form onsubmit="submitOrder(event)">
+        <input type="text" placeholder="Your Name" required><br><br>
+        <input type="text" placeholder="Address" required><br><br>
+        <input type="tel" placeholder="Phone Number" required><br><br>
+        <button type="submit">Place Order</button>
+      </form>
+    </div>
+  </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 M M Khakhrawala. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Load cart items on page load
+    displayCartItems();
+
+    function submitOrder(event) {
+      event.preventDefault();
+      alert("Order placed successfully!");
+      clearCart();
+    }
+  </script>
+</body>
+</html>

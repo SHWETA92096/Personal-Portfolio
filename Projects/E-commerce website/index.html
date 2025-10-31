@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Khakhra Store</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="home">
+<!-- Login/Signup Overlay -->
+<div class="login-overlay" id="loginOverlay">
+  <!-- Login Form -->
+  <form class="login-box" id="loginForm">
+    <h2>Login</h2>
+    <input type="email" id="loginEmail" placeholder="Email" required />
+    <input type="password" id="loginPassword" placeholder="Password" required />
+    <button type="submit">Login</button>
+    <p>Don't have an account? <a href="#" id="showSignup">Sign up</a></p>
+  </form>
+
+  <!-- Signup Form -->
+  <form class="login-box" id="signupForm" style="display: none;">
+    <h2>Sign Up</h2>
+    <input type="email" id="signupEmail" placeholder="Email" required />
+    <input type="password" id="signupPassword" placeholder="6-Digit Password" pattern="\d{6}" title="Password must be exactly 6 numbers" required maxlength="6" />
+    <input type="password" id="confirmPassword" placeholder="Confirm Password" pattern="\d{6}" title="Password must be exactly 6 numbers" required maxlength="6">
+    <button type="submit">Register</button>
+    <p>Already have an account? <a href="#" id="showLogin">Login</a></p>
+  </form>
+</div>
+</div>
+
+  <!-- Page content -->
+  <div class="content">
+    <header>
+      <h1>M M Khakhrawala</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2>Welcome to M M Khakhrawala</h2>
+      <p>Crunchy, healthy, tasty and Made With &hearts; delivered to your doorstep!</p>
+      <p>
+        Looking for that crispy snack that reminds you of home? Our Khakhra is made with love, tradition, and the finest ingredients—just like how mom makes it. 
+        Every bite is a taste of authenticity, handcrafted to perfection with no preservatives or shortcuts. Whether you enjoy it with tea, as a light snack, or share it with friends and family, our khakhra is sure to become your favorite.
+        Freshly prepared in small batches to ensure quality and flavour — place your order now and experience the magic of homemade goodness!
+      </p>
+    </section>
+
+    <section class="categories">
+      <h2>Our Khakhra Varieties</h2>
+      <div class="category-grid">
+        <div>Plain Khakhra</div>
+        <div>Masala Khakhra</div>
+        <div>Jeera Khakhra</div>
+        <div>Moong Khakhra</div>
+        <div>Methi Khakhra</div>
+      </div>
+    </section>
+
+    <section class="slideshow">
+      <h2>Our Khakhra in Pictures</h2>
+      <div class="slideshow-container">
+        <div class="slides">
+          <img src="plain.jpg" alt="Plain Khakhra">
+          <img src="masala.jpg" alt="Masala Khakhra">
+          <img src="jeera.jpg" alt="Jeera Khakhra">
+          <img src="moong.jpg" alt="Moong Khakhra">
+          <img src="methi.jpg" alt="Methi Khakhra">
+        </div>
+      </div>
+    </section>
+
+    <section class="why-choose-us">
+      <h2>Why Choose M M Khakhrawala?</h2>
+      <div class="reasons-grid">
+        <div class="reason">
+          <h3>Homemade Goodness</h3>
+          <p>Each khakhra is handcrafted with love, just like it’s made at home.</p>
+        </div>
+        <div class="reason">
+          <h3>Fresh Ingredients</h3>
+          <p>We use only quality ingredients—no preservatives or artificial flavors.</p>
+        </div>
+        <div class="reason">
+          <h3>Traditional Recipes</h3>
+          <p>Passed down through generations, giving authentic taste in every bite.</p>
+        </div>
+        <div class="reason">
+          <h3>Packed with Care</h3>
+          <p>Sealed to preserve freshness, so every bite is as good as the first.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 M M Khakhrawala. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
